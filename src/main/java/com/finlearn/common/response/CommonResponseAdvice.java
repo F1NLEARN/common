@@ -21,7 +21,8 @@ public class CommonResponseAdvice implements ResponseBodyAdvice<Object> {
                 type.equals(ErrorResponse.class) ||
                 type.equals(ResponseEntity.class) ||
                 type.equals(String.class) ||
-                type.equals(Void.class));
+                type.equals(Void.class) ||
+                type.equals(void.class));
     }
 
     @Override
