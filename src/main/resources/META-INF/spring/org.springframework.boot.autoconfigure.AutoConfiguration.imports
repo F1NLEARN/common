@@ -1,1 +1,2 @@
 com.finlearn.common.config.CommonAutoConfiguration
+com.finlearn.common.security.SecurityConfig
