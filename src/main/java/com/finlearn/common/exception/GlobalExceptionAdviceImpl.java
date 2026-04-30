@@ -26,7 +26,7 @@ public class GlobalExceptionAdviceImpl {
 
         return ResponseEntity
                 .status(e.getStatus())
-                .body(ErrorResponse.of(e.getStatus(), e.getField(), e.getMessage()));
+                .body(ErrorResponse.of(e.getStatus(), e.getCode(), e.getField(), e.getMessage()));
     }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
