@@ -15,9 +15,12 @@ java {
     }
 }
 
-// 실행 가능한 JAR 비활성화, 일반 라이브러리 JAR 활성화
+// 실행 가능한 JAR 비활성화, 일반 라이브러리 JAR 활성화 (-plain 접미사 제거)
 bootJar.enabled = false
-jar.enabled = true
+jar {
+    enabled = true
+    archiveClassifier = ''
+}
 
 repositories {
     mavenCentral()
@@ -26,6 +29,7 @@ repositories {
 dependencies {
     api 'org.springframework.boot:spring-boot-starter-web'
     api 'org.springframework.boot:spring-boot-starter-validation'
+    api 'org.springframework.boot:spring-boot-starter-security'
     api 'org.springframework.boot:spring-boot-starter-data-jpa'
     api 'org.springframework.boot:spring-boot-starter-data-redis'
     api 'org.springframework.kafka:spring-kafka'
