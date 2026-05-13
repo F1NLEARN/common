@@ -1,2 +1,3 @@
 com.finlearn.common.config.CommonAutoConfiguration
+com.finlearn.common.config.JpaAuditConfig
 com.finlearn.common.security.SecurityConfig
