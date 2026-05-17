@@ -37,6 +37,7 @@ dependencies {
     api 'io.zipkin.reporter2:zipkin-reporter-brave'
     api 'org.springframework.boot:spring-boot-starter-actuator'
     api 'io.micrometer:micrometer-tracing-bridge-brave'
+    api 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.9'
 
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
